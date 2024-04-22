@@ -22,24 +22,38 @@
 
 module Registers(
     input clk, //Clock input
-    input [2:0] readAddr, //Address for the read port
-    input [2:0] writeAddr, //Address for the write port
+    input reset, //Reset input
+    input [2:0] readAddr, //Determines which registers to read from
+    input [2:0] writeAddr, //Determines which register to write data on
     input [7:0] writeData, //Data to be written
     input writeEnable, //Write enable signal
-    output reg [7:0] readData //Data output for read port
+    output reg [7:0] readData //Reads the chosen register
     );
 
 reg [7:0] registers [0:7]; //2D array of 8-bit registers defined for storage
 
+//base case - reset all registers to 0
+integer i;
+always @(*)
+    if (reset == 1) 
+    begin
+        #10
+        for (i = 0; i < 8; i = i + 1) 
+        begin
+            registers[i] = 8'b00000000;
+        end
+    end
+    
+
 //Read Operation
-always @ (posedge clk) begin
-    readData <= registers[readAddr];
+always @ (posedge clk) begin //clocked always block with nonblocking assignments for sequential logic
+    readData <= registers[readAddr]; //nonblocking assignment, reads data from registers
 end
 
 //Write Operation
 always @ (posedge clk) begin
-    if (writeEnable) begin
-        registers[writeAddr] <= writeData;
+    if (writeEnable == 1'b1 && reset == 1'b0) begin
+        registers[writeAddr] <= writeData; //populates registers with input data
     end
 end
    
