@@ -19,9 +19,10 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module ArrMult_4bit(
+module ArrMult_8bit(
     input [3:0] a, b, //multiplicand and multiplier
-    output [7:0] prod //8-bit product (sums added to final number)
+    output [7:0] prod, //8-bit product (sums added to final number)
+    output [7:0] prod2
     );
 
     wire [10:0] carry; //carry is used for the sums, define globally
