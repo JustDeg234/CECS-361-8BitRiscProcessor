@@ -35,7 +35,11 @@ module ControlUnit( //Control Unit takes in opcode signal, modifies control sign
     //output reg alu_src, // 1 bit ALU source control signal that changes operand B from register B to a predetermined operand.
     output reg reg_write, // 1 bit Register write control signal that writes data to register when high
     //output reg reg_read NOT NEEDED because it is the default operation by the CPU
-    output reg signed_zero // 1 bit signed or zero control signal that determines if ALU result should be read as a signed var or zero.
+    output reg signed_zero, // 1 bit signed or zero control signal that determines if ALU result should be read as a signed var or zero.
+    
+    output reg cin, //for addsub
+    output reg overflow, //for addsub
+    output reg cout
     );
     
     //opcode:
@@ -53,6 +57,10 @@ module ControlUnit( //Control Unit takes in opcode signal, modifies control sign
                 //alu_src = 1'b0;
                 reg_write = 1'b1;
                 signed_zero = 1'b1;
+                
+                cin = 1'b0;
+                overflow = 1'b0;
+                cout = 1'b0;
             end
             
             3'b001: begin //subtraction

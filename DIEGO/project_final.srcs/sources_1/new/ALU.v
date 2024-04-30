@@ -23,30 +23,45 @@
 module ALU(
     input [7:0] A, //input register A acting as operand A
     input [7:0] B, //input register B acting as operand B
-    input [3:0] multiplicand_A, // or have matthew do a 8 bit input array multiplier
-    input [3:0] multiplier_B,
     // Control Unit signals
     input [1:0] alu_op, // 2 bit ALU operation control signal
     //input alu_src
+    input cin,
+    input overflow,
+    input cout,
+    input [7:0] addResult,
+    input [7:0] subResult,
+    input [7:0] multResult,
+    input [7:0] multResult2, //for 8 bit array multiplier
     output reg [7:0] result,
+    output reg [7:0] result2,
     output reg zero, //zero flag
     output reg carry //carry flag
     );
     
-    //Instantiate ArrMult_4bit module
-    ArrMult_4bit AM_4b(.a(multiplicand_A), .b(multiplier_B), .prod(mult_result));
+    //Instantiate the modules
+    AddSub_8bit RCA_ADD(.a(A), .b(B), .cin(1'b0), .s(addResult), .cout(cout), .overflow(overflow)); //instantiate RCA module for addition
+    AddSub_8bit RCA_SUB(.a(A), .b(B), .cin(1'b1), .s(subResult), .cout(cout), .overflow(overflow)); //instantiate RCA module for subtraction
+    ArrMult_8bit AM_4b(.a(A), .b(B), .prod(multResult)); // .prod2(multResult2);
     
-    always @(*) 
-    begin
-        case(alu_op)
-            2'b00: result = A + B; // Addition - have matthew implement 8-bit CLA
-            2'b01: result = A - B; // Subtraction
-            2'b10: result = mult_result; // Array Multiplier Result
-            2'b11: result = 0; //Test
-            default: result = 8'h00; // Default is to 0 for unknown opcode
-        endcase
-    end
     
+always @(*) begin //always runs every clock cycle
+    case(alu_op)
+        2'b00: begin //addition
+            result <= addResult;
+        end
+        2'b01: begin // Subtraction
+            result <= subResult;
+        end
+        2'b10: begin // Array Multiplier Result
+            result <= multResult;
+            result2 <= multResult2;
+        end
+        2'b11: result = 0; //Test
+        default: result = 8'h00; // Default is to 0 for unknown opcode
+    endcase
+end
+
     
     
 endmodule
