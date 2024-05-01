@@ -27,10 +27,10 @@ module AddSub_8bit_tb();
 
     wire [7:0] sum_tb;
     wire cout_tb;
-    wire overflow_tb;    
-    
+    wire overflow_tb;
+
     integer i, j;
-    
+
     // Instantiate the AddSub_8bit module
       AddSub_8bit uut (
         .a(a_tb),
@@ -40,33 +40,31 @@ module AddSub_8bit_tb();
         .s(sum_tb),
         .overflow(overflow_tb)
       );
-   
-    
+
+
    initial begin
-   
+
       cin_tb = 0; // addition
-   
+
       for(i = 0; i < 129; i = i + 1) 
           begin
           {a_tb} = i;
               for(j = 0; j < 129; j = j + 1) 
               begin
-              {b_tb} = j;     
+              {b_tb} = j;
               //#10;
               result = (a_tb + b_tb);
-              #3;   
+              #3;
               if (result == sum_tb) 
                   begin
                   $display(a_tb," + ",b_tb," passed. Since result = ",result," and sum_tb = ",sum_tb);
                   end 
               else 
                   begin
-                  $display(a_tb," + ", b_tb," failed.");
+                  $display(a_tb," + ",b_tb," faile. Since result = ",result," and sum_tb = ",sum_tb);
                   end
-              end  
+              end
           end
-      $finish;   
-  end    
+      $finish;
+  end
 endmodule
-
-

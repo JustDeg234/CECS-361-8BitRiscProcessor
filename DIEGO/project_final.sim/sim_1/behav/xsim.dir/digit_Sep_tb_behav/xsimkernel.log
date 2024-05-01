@@ -1,0 +1,4 @@
+Running: xsim.dir/digit_Sep_tb_behav/xsimk.exe -simmode gui -wdb digit_Sep_tb_behav.wdb -simrunnum 0 -socket 60042
+Design successfully loaded
+Design Loading Memory Usage: 8848 KB (Peak: 8848 KB)
+Design Loading CPU Usage: 46 ms

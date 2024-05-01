@@ -25,25 +25,20 @@ module ALU(
     input [7:0] B, //input register B acting as operand B
     // Control Unit signals
     input [1:0] alu_op, // 2 bit ALU operation control signal
+    input reset,
     //input alu_src
-    input cin,
-    input overflow,
-    input cout,
-    input [7:0] addResult,
-    input [7:0] subResult,
-    input [7:0] multResult,
-    input [7:0] multResult2, //for 8 bit array multiplier
-    output reg [7:0] result,
-    output reg [7:0] result2,
-    output reg zero, //zero flag
-    output reg carry //carry flag
+    output reg [7:0] result
     );
     
-    //Instantiate the modules
+   wire [7:0] addResult;
+   wire [7:0] subResult;
+   wire [7:0] multResult;
+   wire [7:0] divResult;
+
+    //Instantiate the modules ASK REZAI HOW TO INSTANTIATE IN CASE
     AddSub_8bit RCA_ADD(.a(A), .b(B), .cin(1'b0), .s(addResult), .cout(cout), .overflow(overflow)); //instantiate RCA module for addition
     AddSub_8bit RCA_SUB(.a(A), .b(B), .cin(1'b1), .s(subResult), .cout(cout), .overflow(overflow)); //instantiate RCA module for subtraction
-    ArrMult_8bit AM_4b(.a(A), .b(B), .prod(multResult)); // .prod2(multResult2);
-    
+    //ArrMult_8bit AM_4b(.a(A), .b(B), .prod(multResult)); // .prod2(multResult2);
     
 always @(*) begin //always runs every clock cycle
     case(alu_op)
@@ -55,13 +50,10 @@ always @(*) begin //always runs every clock cycle
         end
         2'b10: begin // Array Multiplier Result
             result <= multResult;
-            result2 <= multResult2;
         end
-        2'b11: result = 0; //Test
+        2'b11: result <= divResult; //Test
         default: result = 8'h00; // Default is to 0 for unknown opcode
     endcase
 end
 
-    
-    
 endmodule

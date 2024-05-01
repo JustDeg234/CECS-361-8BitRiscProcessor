@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1714532608">
+  <File Type="OPT-DCP" Name="tempTOP_opt.dcp"/>
+  <File Type="ROUTE-STATUS-PB" Name="tempTOP_route_status.pb"/>
+  <File Type="PA-TCL" Name="tempTOP.tcl"/>
+  <File Type="RDI-RDI" Name="tempTOP.vdi"/>
+  <File Type="PWROPT-DRC" Name="tempTOP_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="tempTOP_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="tempTOP_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="tempTOP_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="tempTOP_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="tempTOP.hwdef"/>
+  <File Type="OPT-TIMING" Name="tempTOP_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="tempTOP_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="tempTOP_placed.dcp"/>
+  <File Type="PLACE-IO" Name="tempTOP_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="tempTOP_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="tempTOP_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="tempTOP_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="tempTOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="tempTOP_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="tempTOP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="tempTOP_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="tempTOP_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="tempTOP_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="tempTOP_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="tempTOP_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="tempTOP_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="tempTOP_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="tempTOP_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="tempTOP_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="tempTOP_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="tempTOP_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIT" Name="tempTOP.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="tempTOP_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="tempTOP_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="tempTOP_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="tempTOP_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="tempTOP_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="tempTOP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="tempTOP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="tempTOP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="tempTOP_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="tempTOP_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="tempTOP_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="tempTOP_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="tempTOP_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="tempTOP_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="tempTOP_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="tempTOP.bin"/>
+  <File Type="BITSTR-MSK" Name="tempTOP.msk"/>
+  <File Type="BITSTR-RBT" Name="tempTOP.rbt"/>
+  <File Type="BITSTR-NKY" Name="tempTOP.nky"/>
+  <File Type="BITSTR-BMM" Name="tempTOP_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="tempTOP.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="tempTOP.sysdef"/>
+  <File Type="BG-BGN" Name="tempTOP.bgn"/>
+  <File Type="BG-DRC" Name="tempTOP.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/FA.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/BCD_to7Seg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AddSub_8bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/time_multiplexer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/digit_Sep.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_time.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tempTOP.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/mux2to1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HA.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ArrMult_4bit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ControlUnit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Registers.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="tempTOP"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/NexysA7-100t.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

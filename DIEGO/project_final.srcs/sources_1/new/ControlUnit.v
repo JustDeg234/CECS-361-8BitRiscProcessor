@@ -21,7 +21,7 @@
 
 
 module ControlUnit( //Control Unit takes in opcode signal, modifies control signals, then decodes for directing instruction to ALU
-    input [2:0] opcode, // 3 bit input control signal from FPGA that determines CPU process 
+    input [4:0] opcode, // 3 bit input control signal from FPGA that determines CPU process 
     //essential control signals:
     output reg reg_dst, // 1 bit Register destination control signal, determines if output result is sent to a registerz
     output reg mem_to_reg, /* 1 bit Memory to Register control signal, specifies location of signal written to register, 
@@ -48,58 +48,22 @@ module ControlUnit( //Control Unit takes in opcode signal, modifies control sign
         case(opcode) //control signals changed depedning on the following opcode input
             3'b000: begin //addition operation
                 //control signals
-                reg_dst = 1'b1;
-                mem_to_reg = 1'b0;
-                alu_op = 2'b00; //1st ALU case
-                jump = 1'b0;
-                mem_read = 1'b0;
-                mem_write = 1'b0;
-                //alu_src = 1'b0;
-                reg_write = 1'b1;
-                signed_zero = 1'b1;
-                
-                cin = 1'b0;
-                overflow = 1'b0;
-                cout = 1'b0;
+                alu_op = 2'b00;  
             end
             
             3'b001: begin //subtraction
                 //control signals
-                reg_dst = 1'b1;
-                mem_to_reg = 1'b0;
                 alu_op = 2'b01; //2nd ALU case
-                jump = 1'b0;
-                mem_read = 1'b0;
-                mem_write = 1'b0;
-                //alu_src = 1'b0;
-                reg_write = 1'b1;
-                signed_zero = 1'b1;
             end
             
-            3'b001: begin //array multiplier
+            3'b010: begin //array multiplier
                 //control signals
-                reg_dst = 1'b1;
-                mem_to_reg = 1'b0;
                 alu_op = 2'b10; //3rd ALU case
-                jump = 1'b0;
-                mem_read = 1'b0;
-                mem_write = 1'b0;
-                //alu_src = 1'b0;
-                reg_write = 1'b1;
-                signed_zero = 1'b1;
             end
             
-            3'b001: begin //TEST
+            3'b011: begin //array divider
                 //control signals
-                reg_dst = 1'b1;
-                mem_to_reg = 1'b0;
                 alu_op = 2'b11; //4th ALU case
-                jump = 1'b0;
-                mem_read = 1'b0;
-                mem_write = 1'b0;
-                //alu_src = 1'b0;
-                reg_write = 1'b1;
-                signed_zero = 1'b1;
             end
             
             default: begin

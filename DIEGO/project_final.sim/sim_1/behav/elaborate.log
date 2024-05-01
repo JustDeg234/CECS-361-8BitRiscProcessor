@@ -1,0 +1,15 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto c854e2a4b0d14d4787079d905492d00b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TimeMultiTop_tb_behav xil_defaultlib.TimeMultiTop_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port in1 [C:/Users/angry/Desktop/hmwk/year 3 semester 2/CECS 361/projects/project_final/project_final.srcs/sim_1/new/TimeMultiTop_tb.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.BCD_to7Seg
+Compiling module xil_defaultlib.time_multiplexer
+Compiling module xil_defaultlib.TimeMultiTop_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TimeMultiTop_tb_behav

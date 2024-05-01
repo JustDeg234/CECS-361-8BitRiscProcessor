@@ -1,0 +1,4 @@
+Running: xsim.dir/TimeMultiTop_tb_behav/xsimk.exe -simmode gui -wdb TimeMultiTop_tb_behav.wdb -simrunnum 0 -socket 60308
+Design successfully loaded
+Design Loading Memory Usage: 8884 KB (Peak: 8884 KB)
+Design Loading CPU Usage: 61 ms
