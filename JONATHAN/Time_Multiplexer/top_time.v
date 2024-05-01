@@ -26,28 +26,31 @@ module top_time(
     input [3:0] in1,
     input [3:0] in2,
     input [3:0] in3,
+    input [3:0] in4,
     output [7:0] anode,
     output [7:0] cathode
 );
 
 // Embedded values for in0, in1, and in2
-localparam [3:0] IN0_VALUE = 4'b0000; // Replace XXXX with your desired value
-localparam [3:0] IN1_VALUE = 4'b0001;
-localparam [3:0] IN2_VALUE = 4'b0010;
-localparam [3:0] IN3_VALUE = 4'b0011;
+localparam [3:0] IN0_VALUE = 4'b0000; // 0
+localparam [3:0] IN1_VALUE = 4'b0001; // 1
+localparam [3:0] IN2_VALUE = 4'b0010; // 2
+localparam [3:0] IN3_VALUE = 4'b0011; // 3
+localparam [3:0] IN4_VALUE = 4'b0100; // 4
+localparam [3:0] IN5_VALUE = 4'b0101; // 5
+localparam [3:0] IN6_VALUE = 4'b0110; // 6
+localparam [3:0] IN7_VALUE = 4'b0111; // 7
+localparam [3:0] IN8_VALUE = 4'b1000; // 8
+localparam [3:0] IN9_VALUE = 4'b1001; // 9
 
-    /*
-    BCD_to7Seg inst1(in0, o1);
-    BCD_to7Seg inst2(in1, o2);
-    BCD_to7Seg inst3(in2, o3);
-    */
 
 time_multiplexer inst_time_mux(
     .clk(clk),
     .reset(reset),
-    .in1(in1),
-    .in2(in2),
-    .in3(in3),
+    .in1(IN2_VALUE),
+    .in2(IN5_VALUE),
+    .in3(IN4_VALUE),
+    .in4(IN8_VALUE),
     .anode(anode),
     .cathode(cathode)
 );

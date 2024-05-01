@@ -22,33 +22,11 @@
 
 module BCD_to7Seg(
 
+    //input wire bitVal,
     input wire [3:0] bitVal,
     output reg [7:0] digit
 
-);
-
-    /*
-    reg [7:0] digit_temp;
-    
-     
-        always @ (*)
-             begin
-                  case(bitVal)             //hgfedcba
-                   4'b0000 : digit_temp = 8'b11000000; //to display 0
-                   4'b0001 : digit_temp = 8'b11111001; //to display 1
-                   4'b0010 : digit_temp = 8'b10100100; //to display 2
-                   4'b0011 : digit_temp = 8'b10110000; //to display 3
-                   4'b0100 : digit_temp = 8'b10011001; //to display 4
-                   4'b0101 : digit_temp = 8'b10010010; //to display 5
-                   4'b0110 : digit_temp = 8'b10000010; //to display 6
-                   4'b0111 : digit_temp = 8'b11111000; //to display 7
-                   4'b1000 : digit_temp = 8'b10000000; //to display 8
-                   4'b1001 : digit_temp = 8'b10010000; //to display 9
-                   default : digit_temp = 8'b10111111; //dash
-              endcase
-         end
-     */
-     
+);     
      
      always @ (*)
           begin
@@ -66,9 +44,5 @@ module BCD_to7Seg(
                 default : digit = 8'b10111111; //dash
            endcase
       end
-     
-    //assign digit = digit_temp; 
-    
-    //assign digit = {digit_temp[7], digit_temp[6], digit_temp[5], digit_temp[4], digit_temp[3], digit_temp[2], digit_temp[1], digit_temp[0]};
 
 endmodule

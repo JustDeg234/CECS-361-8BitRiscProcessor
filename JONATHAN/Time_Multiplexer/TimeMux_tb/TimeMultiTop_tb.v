@@ -23,11 +23,12 @@
 module TimeMultiTop_tb; // simple testbench
 
     reg clk_tb, reset_tb;
-    reg [7:0] in1_tb = 0, in2_tb = 0, in3_tb = 0;
+    //reg in1_tb = 0, in2_tb = 0, in3_tb = 0;
+    reg [7:0] in1_tb = 0, in2_tb = 0, in3_tb = 0, in4_tb = 0;
     wire [2:0] anode_tb;
     wire [7:0] cathode_tb;
     
-    time_multiplexer UUT(.clk(clk_tb), .reset(reset_tb), .in1(in1_tb), .in2(in2_tb), .in3(in3_tb), .anode(anode_tb), .cathode(cathode_tb));
+    time_multiplexer UUT(.clk(clk_tb), .reset(reset_tb), .in1(in1_tb), .in2(in2_tb), .in3(in3_tb), .in4(in4_tb), .anode(anode_tb), .cathode(cathode_tb));
   
     always // create clock
         #5 clk_tb = ~clk_tb;
@@ -46,6 +47,7 @@ module TimeMultiTop_tb; // simple testbench
             in1_tb = 2; 
             in2_tb = 5; 
             in3_tb = 4;
+            in4_tb = 8;
             
             //repeat(20) @(negedge clk_tb); // wait for 20 falling edges before ending simulation
             $finish;
