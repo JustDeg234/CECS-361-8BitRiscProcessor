@@ -42,7 +42,7 @@ module TOP(
     wire reset = 0;
     
     ALU alu(.A(A), .B(B), .alu_op(alu_op), .result(aluResult));
-    InstructionDecoder inst_dec(.add(addition), .sub(subtraction), .mult(multiplication), .div(divider), .prev(previous), .opcode(opcode));
+    InstructionDecoder inst_dec(.add(addition), .sub(subtraction), .mult(multiplication), .div(divider), .opcode(opcode));
     ControlUnit cu(.opcode(opcode), .alu_op(alu_op)); //.read(read));
     //Register register(.clk(clk), .read(read), .result(aluResult), .readResult(readResult));
     digit_Sep digit_sep(.input_data(aluResult), .digit_1(in1), .digit_2(in2), .digit_3(in3), .digit_4(in4));

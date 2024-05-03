@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/angry/Desktop/hmwk/year 3 semester 2/CECS 361/projects/project_final/project_final.runs/impl_1'
+HD_PWD='C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

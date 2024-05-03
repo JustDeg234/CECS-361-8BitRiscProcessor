@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Thu May 02 12:11:27 2024
-| Host         : LAPTOP-BQSABBDP running 64-bit major release  (build 9200)
+| Date         : Thu May 02 15:20:43 2024
+| Host         : LAPTOP-7NTTMRAQ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
 | Design       : TOP
 | Device       : xc7a100t
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     2 |
-| Unused register locations in slices containing registers |    11 |
+| Number of unique control sets                            |     1 |
+| Unused register locations in slices containing registers |     5 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,7 +33,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              21 |            6 |
+| No           | No                    | No                     |              19 |            5 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
@@ -45,11 +45,10 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------+---------------+------------------+------------------+----------------+
-|        Clock Signal       | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+---------------------------+---------------+------------------+------------------+----------------+
-|  cu/alu_op_reg[1]_i_1_n_0 |               |                  |                1 |              2 |
-|  clk_IBUF_BUFG            |               |                  |                5 |             19 |
-+---------------------------+---------------+------------------+------------------+----------------+
++----------------+---------------+------------------+------------------+----------------+
+|  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+---------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG |               |                  |                5 |             19 |
++----------------+---------------+------------------+------------------+----------------+
 
 

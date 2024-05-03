@@ -37,8 +37,8 @@ module InstructionDecoder( //basically a lot of muxes
     
     //converts the multiple 1-bit signal input from the button presses to the corresponding operation code to be sent to ALU or Registers
     always @(*) begin
-        if (add)
-            opcode = 3'b000;
+        if (write_en)
+            opcode = 3'b101;
         else if (sub)
             opcode = 3'b001;
         else if (mult)
@@ -47,10 +47,12 @@ module InstructionDecoder( //basically a lot of muxes
             opcode = 3'b011;
         else if (prev)
             opcode = 3'b100;
-        else if (write_en)
-            opcode = 3'b101;
+        else //if (write_en) set standard to add
+            opcode = 3'b000;
+            /*
         else 
             opcode = 3'b110;
+            */
     end
     /*always @(*) begin
     if (op == 5'b00010) //add, up btn
