@@ -22,7 +22,6 @@
 
 module BCD_to7Seg(
 
-    //input wire bitVal,
     input wire [3:0] bitVal,
     output reg [7:0] digit
 

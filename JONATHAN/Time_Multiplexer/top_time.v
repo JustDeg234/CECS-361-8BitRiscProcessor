@@ -23,10 +23,13 @@
 module top_time(
     input clk,
     input reset,
+    //wire [19:0] curr_state,
+    //wire [19:0] next_state,
     input [3:0] in1,
     input [3:0] in2,
     input [3:0] in3,
     input [3:0] in4,
+    input [3:0] in5,
     output [7:0] anode,
     output [7:0] cathode
 );
@@ -47,10 +50,13 @@ localparam [3:0] IN9_VALUE = 4'b1001; // 9
 time_multiplexer inst_time_mux(
     .clk(clk),
     .reset(reset),
+    //.curr_state(curr_state),
+    //.next_state(next_state),
     .in1(IN2_VALUE),
     .in2(IN5_VALUE),
     .in3(IN4_VALUE),
     .in4(IN8_VALUE),
+    .in5(IN9_VALUE),
     .anode(anode),
     .cathode(cathode)
 );
