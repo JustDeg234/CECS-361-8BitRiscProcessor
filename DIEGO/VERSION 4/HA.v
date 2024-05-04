@@ -16,4 +16,5 @@ module HA(
 );
 
     assign {c_out, sum} = a + b;
+    
 endmodule

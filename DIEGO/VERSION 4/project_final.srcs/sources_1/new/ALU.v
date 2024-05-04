@@ -27,14 +27,14 @@ module ALU(
     //input [1:0] alu_op, // 2 bit ALU operation control signal
     input [1:0] alu_op,
     //input alu_src
-    output reg [7:0] result
+    output reg [15:0] result
     );
     
     
     wire [7:0] addResult;
     wire [7:0] subResult;
     //temp values
-    wire [7:0] multResult = 8'b0000_0111;
+    wire [15:0] multResult;
     wire [7:0] divResult = 8'b0000_0110;
    
     /*
@@ -54,7 +54,7 @@ module ALU(
     //Instantiate the modules ASK REZAI HOW TO INSTANTIATE IN CASE
     AddSub_8bit RCA_ADD(.a(A), .b(B), .cin(1'b0), .s(addResult), .cout(cout), .overflow(overflow)); //instantiate RCA module for addition
     AddSub_8bit RCA_SUB(.a(A), .b(B), .cin(1'b1), .s(subResult), .cout(cout), .overflow(overflow)); //instantiate RCA module for subtraction
-    //ArrMult_8bit AM_4b(.a(A), .b(B), .prod(multResult)); // .prod2(multResult2);
+    ArrMult_8bit AM_8b(.a(A), .b(B), .prod(multResult)); 
     
 always @(*) begin //always runs every clock cycle, always @(*) used only for combinational logic, which also means blocking assignment '='
     case(alu_op)

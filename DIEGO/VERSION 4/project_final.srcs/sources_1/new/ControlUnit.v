@@ -86,7 +86,7 @@ module ControlUnit( //Control Unit takes in opcode signal, modifies control sign
                 write = 1'b1; //register write signal
             end
             
-            3'b110: begin //default
+            3'b110: begin //default case - 0's on displays
                 read = 1'b0;
                 write = 1'b0;
             end

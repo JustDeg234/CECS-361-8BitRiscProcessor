@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Thu May 02 18:50:07 2024
+| Date         : Fri May 03 18:27:59 2024
 | Host         : LAPTOP-7NTTMRAQ running 64-bit major release  (build 9200)
 | Command      : report_drc -file TOP_drc_opted.rpt
 | Design       : TOP
@@ -42,7 +42,7 @@ Related violations: <none>
 
 PLIO-7#1 Warning
 Placement Constraints Check for IO constraints  
-An IO Bus A[7:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS18 (A[1], A[0]); LVCMOS33 (A[7], A[6], A[5], A[4], A[3], A[2]); 
+An IO Bus B[7:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS18 (B[1], B[0]); LVCMOS33 (B[7], B[6], B[5], B[4], B[3], B[2]); 
 Related violations: <none>
 
 

@@ -24,12 +24,12 @@ module Register(
     input clk,
     input read,
     input write,
-    input [7:0] result, //Result from ALU
-    output reg [7:0] readResult //Reads the chosen register
+    input [15:0] result, //Result from ALU
+    output reg [15:0] readResult //Reads the chosen register
     );
     
-    reg [7:0] register1 = 8'h00; //8-bit storage register initialized to 0
-    reg [7:0] register2 = 8'h00; //8-bit storage register initialized to 0
+    reg [15:0] register1 = 8'h00; //8-bit storage register initialized to 0
+    reg [15:0] register2 = 8'h00; //8-bit storage register initialized to 0
     //readResult = 8'h00; //8-bit register to hold result
     //reg c = 0;
     

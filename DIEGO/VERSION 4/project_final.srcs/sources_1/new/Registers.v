@@ -26,19 +26,19 @@ module Registers(
     input read,
     //input [2:0] readAddr, //Determines which registers to read from
     //input [2:0] writeAddr, //Determines which register to write data on
-    input [7:0] result, //Result from ALU
+    input [15:0] result, //Result from ALU
     //input writeEnable, //Write enable signal
-    output reg [7:0] readResult //Reads the chosen register
+    output reg [15:0] readResult //Reads the chosen register
     );
 
-reg [7:0] registers [0:7]; //2D array of 8-bit registers defined for storage
+reg [15:0] registers [7:0]; //2D array of 8-bit registers defined for storage
 reg [2:0] counter; //3 bit register that allows a way of checking if current register and incoming result are different
 
 //base case - initialize all registers to 0
 integer i,j;
 initial begin
     for (j = 0; j < 8; j = j + 1) begin
-        registers[j] <= 8'b00000000;
+        registers[j] <= 16'b00000000_00000000;
     end
 end
 
@@ -46,9 +46,9 @@ end
 always @(posedge clk or posedge reset)begin
     if (reset) begin //use begin after if declaration if it holds multiple statements
         for (i = 0; i < 8; i = i + 1) begin
-            registers[i] <= 8'b00000000;
+            registers[i] <= 16'b00000000_00000000;
         end
-        readResult <= 8'b00000000;
+        readResult <= 16'b00000000_00000000;
     end else begin //using end and begin here bc multiple statements
         if (result != registers[counter]) begin //updates current register with result only if result has changed
             registers[counter] <= result;//update current register with incoming result

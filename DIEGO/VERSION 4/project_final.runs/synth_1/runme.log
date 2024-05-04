@@ -23,9 +23,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 27148 
+INFO: Helper process launched with PID 3404 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 301.398 ; gain = 94.777
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 300.941 ; gain = 93.910
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/tempTOP.v:23]
 INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ALU.v:23]
@@ -33,28 +33,31 @@ INFO: [Synth 8-638] synthesizing module 'AddSub_8bit' [C:/Users/jonat/OneDrive/D
 INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/FA.v:23]
 INFO: [Synth 8-256] done synthesizing module 'FA' (1#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/FA.v:23]
 INFO: [Synth 8-256] done synthesizing module 'AddSub_8bit' (2#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/AddSub_8bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'ArrMult_8bit' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ArrMult_8bit.v:22]
+INFO: [Synth 8-638] synthesizing module 'mux2to1' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/mux2to1.v:11]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1' (3#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/mux2to1.v:11]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/HA.v:11]
+INFO: [Synth 8-256] done synthesizing module 'HA' (4#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/HA.v:11]
+INFO: [Synth 8-256] done synthesizing module 'ArrMult_8bit' (5#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ArrMult_8bit.v:22]
 INFO: [Synth 8-226] default block is never used [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ALU.v:60]
-INFO: [Synth 8-256] done synthesizing module 'ALU' (3#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (6#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ALU.v:23]
 INFO: [Synth 8-638] synthesizing module 'InstructionDecoder' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/InstructionDecoder.v:23]
-INFO: [Synth 8-256] done synthesizing module 'InstructionDecoder' (4#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/InstructionDecoder.v:23]
-WARNING: [Synth 8-689] width (4) of port connection 'opcode' does not match port width (3) of module 'InstructionDecoder' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/tempTOP.v:48]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecoder' (7#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/InstructionDecoder.v:23]
 INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ControlUnit.v:23]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ControlUnit.v:54]
-INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (5#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ControlUnit.v:23]
-WARNING: [Synth 8-689] width (4) of port connection 'opcode' does not match port width (3) of module 'ControlUnit' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/tempTOP.v:49]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (8#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ControlUnit.v:23]
 INFO: [Synth 8-638] synthesizing module 'Register' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/Register.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Register' (6#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register' (9#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/Register.v:23]
 INFO: [Synth 8-638] synthesizing module 'digit_Sep' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/digit_Sep.v:23]
-INFO: [Synth 8-256] done synthesizing module 'digit_Sep' (7#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/digit_Sep.v:23]
+INFO: [Synth 8-256] done synthesizing module 'digit_Sep' (10#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/digit_Sep.v:23]
 INFO: [Synth 8-638] synthesizing module 'time_multiplexer' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/time_multiplexer.v:23]
-	Parameter N bound to: 19 - type: integer 
+	Parameter N bound to: 20 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'BCD_to7Seg' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/BCD_to7Seg.v:23]
-INFO: [Synth 8-256] done synthesizing module 'BCD_to7Seg' (8#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/BCD_to7Seg.v:23]
-INFO: [Synth 8-256] done synthesizing module 'time_multiplexer' (9#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/time_multiplexer.v:23]
-INFO: [Synth 8-256] done synthesizing module 'TOP' (10#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/tempTOP.v:23]
-WARNING: [Synth 8-3331] design InstructionDecoder has unconnected port add
+INFO: [Synth 8-256] done synthesizing module 'BCD_to7Seg' (11#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/BCD_to7Seg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'time_multiplexer' (12#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/time_multiplexer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (13#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/tempTOP.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 337.918 ; gain = 131.297
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 338.480 ; gain = 131.449
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -64,7 +67,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 337.918 ; gain = 131.297
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 338.480 ; gain = 131.449
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -80,28 +83,29 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 640.961 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 642.668 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 642.668 ; gain = 435.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 642.668 ; gain = 435.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 642.668 ; gain = 435.637
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'alu_op_reg' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ControlUnit.v:56]
 WARNING: [Synth 8-327] inferring latch for variable 'read_reg' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ControlUnit.v:57]
 WARNING: [Synth 8-327] inferring latch for variable 'write_reg' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/ControlUnit.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'cathode_reg' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.srcs/sources_1/new/time_multiplexer.v:62]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 642.668 ; gain = 435.637
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -114,17 +118,20 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      1 Bit       Adders := 16    
+	   2 Input      2 Bit       Adders := 8     
+	   2 Input      1 Bit       Adders := 64    
 +---XORs : 
-	   2 Input      1 Bit         XORs := 52    
+	   2 Input      1 Bit         XORs := 148   
 +---Registers : 
-	                8 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
 +---Muxes : 
-	   4 Input      8 Bit        Muxes := 3     
-	   2 Input      8 Bit        Muxes := 3     
-	  11 Input      8 Bit        Muxes := 4     
-	   4 Input      3 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	  11 Input      8 Bit        Muxes := 5     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 64    
+	   8 Input      1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -142,14 +149,22 @@ Module AddSub_8bit
 Detailed RTL Component Info : 
 +---XORs : 
 	   2 Input      1 Bit         XORs := 10    
+Module mux2to1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module HA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
 Module ALU 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   4 Input      8 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
 Module InstructionDecoder 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
 Module ControlUnit 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -157,9 +172,9 @@ Detailed RTL Component Info :
 Module Register 
 Detailed RTL Component Info : 
 +---Registers : 
-	                8 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 3     
 Module BCD_to7Seg 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -167,7 +182,8 @@ Detailed RTL Component Info :
 Module time_multiplexer 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   4 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -180,20 +196,15 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 640.961 ; gain = 434.340
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 642.668 ; gain = 435.637
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3917] design TOP has port anode[7] driven by constant 1
-WARNING: [Synth 8-3917] design TOP has port anode[6] driven by constant 1
-WARNING: [Synth 8-3917] design TOP has port anode[5] driven by constant 1
-WARNING: [Synth 8-3917] design TOP has port anode[4] driven by constant 1
-WARNING: [Synth 8-3917] design TOP has port cathode[7] driven by constant 1
-WARNING: [Synth 8-3331] design TOP has unconnected port addition
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/HA.v:18]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 642.668 ; gain = 435.637
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Parallel Reinference  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 642.668 ; gain = 435.637
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -203,14 +214,12 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cu/alu_op_reg[1] )
-WARNING: [Synth 8-3332] Sequential element (cu/alu_op_reg[1]) is unused and will be removed from module TOP.
-WARNING: [Synth 8-3332] Sequential element (cu/read_reg) is unused and will be removed from module TOP.
-WARNING: [Synth 8-3332] Sequential element (cu/write_reg) is unused and will be removed from module TOP.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst_time_mux/cathode_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (inst_time_mux/cathode_reg[7]) is unused and will be removed from module TOP.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 642.668 ; gain = 435.637
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 642.668 ; gain = 435.637
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -224,10 +233,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:37 . Memory (MB): peak = 642.668 ; gain = 435.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 752.684 ; gain = 545.652
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -238,17 +247,19 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (cu/read_reg) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (cu/write_reg) is unused and will be removed from module TOP.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 752.684 ; gain = 545.652
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 752.684 ; gain = 545.652
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 752.684 ; gain = 545.652
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -265,7 +276,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 752.684 ; gain = 545.652
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -278,7 +289,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 752.684 ; gain = 545.652
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -290,25 +301,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 752.684 ; gain = 545.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 752.684 ; gain = 545.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 752.684 ; gain = 545.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 752.684 ; gain = 545.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -326,46 +337,45 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |     5|
-|3     |LUT1   |    19|
-|4     |LUT2   |    11|
-|5     |LUT3   |     9|
-|6     |LUT4   |     1|
-|7     |LUT5   |    16|
-|8     |LUT6   |    43|
-|9     |MUXF7  |     4|
-|10    |FDRE   |    35|
-|11    |LD     |     1|
-|12    |IBUF   |    20|
-|13    |OBUF   |    16|
+|3     |LUT1   |    20|
+|4     |LUT2   |    33|
+|5     |LUT3   |    44|
+|6     |LUT4   |    78|
+|7     |LUT5   |    36|
+|8     |LUT6   |   148|
+|9     |FDRE   |    52|
+|10    |LD     |     9|
+|11    |IBUF   |    22|
+|12    |OBUF   |    16|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+----------------+-----------------+------+
 |      |Instance        |Module           |Cells |
 +------+----------------+-----------------+------+
-|1     |top             |                 |   181|
-|2     |  cu            |ControlUnit      |    12|
-|3     |  inst_time_mux |time_multiplexer |    47|
-|4     |  register      |Register         |    85|
+|1     |top             |                 |   464|
+|2     |  cu            |ControlUnit      |    54|
+|3     |  inst_time_mux |time_multiplexer |    64|
+|4     |  register      |Register         |   307|
 +------+----------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 752.684 ; gain = 545.652
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 640.961 ; gain = 114.258
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 640.961 ; gain = 434.340
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:31 . Memory (MB): peak = 752.684 ; gain = 224.500
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:42 . Memory (MB): peak = 752.684 ; gain = 545.652
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  LD => LDCE: 1 instances
+  A total of 9 instances were transformed.
+  LD => LDCE: 9 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-35 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+42 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 640.961 ; gain = 418.902
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 640.961 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu May 02 18:49:42 2024...
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:38 . Memory (MB): peak = 752.684 ; gain = 530.316
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 752.684 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri May 03 18:27:26 2024...
