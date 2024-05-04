@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri May 03 18:26:42 2024
-# Process ID: 34576
+# Start of session at: Sat May 04 02:58:32 2024
+# Process ID: 11836
 # Current directory: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.runs/synth_1
 # Command line: vivado.exe -log TOP.vds -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
 # Log file: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/VERSION 4/project_final.runs/synth_1/TOP.vds

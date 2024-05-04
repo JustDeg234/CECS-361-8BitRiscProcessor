@@ -21,13 +21,15 @@
 
 
 module ALU(
+    //input switchDisplay,
     input [7:0] A, //input register A acting as operand A
     input [7:0] B, //input register B acting as operand B
     // Control Unit signals
     //input [1:0] alu_op, // 2 bit ALU operation control signal
     input [1:0] alu_op,
     //input alu_src
-    output reg [15:0] result
+    output reg [15:0] result,
+    output reg enableSDisplay
     );
     
     
@@ -57,13 +59,16 @@ module ALU(
     ArrMult_8bit AM_8b(.a(A), .b(B), .prod(multResult)); 
     
 always @(*) begin //always runs every clock cycle, always @(*) used only for combinational logic, which also means blocking assignment '='
-    case(alu_op)
-        2'b00: result = addResult; //addition
-        2'b01: result = subResult; // Subtraction
-        2'b10: result = multResult; // Array Multiplier Result
-        2'b11: result = divResult; //Test
-        default: result = 8'h00; // Default is to 0 for unknown opcode
-    endcase
+
+        case(alu_op)
+            2'b00: result = addResult; //addition
+            2'b01: result = subResult; // Subtraction
+            2'b10: result = multResult; // Array Multiplier Result
+            2'b11: result = divResult; //Test
+            default: result = addResult; // Default is to show 
+        endcase
+   
+        
 end
 
 endmodule
