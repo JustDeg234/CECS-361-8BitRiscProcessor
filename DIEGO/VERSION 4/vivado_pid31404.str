@@ -6042,3 +6042,13 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instruc
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "time_multiplexer.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
 // Elapsed time: 11 seconds
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tempTOP.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 162 seconds
+selectCodeEditor("tempTOP.v", 398, 432); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 1254 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "time_multiplexer.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,387 MB. GUI used memory: 99 MB. Current time: 5/4/24 3:37:19 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,387 MB. GUI used memory: 96 MB. Current time: 5/4/24 4:07:22 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,387 MB. GUI used memory: 96 MB. Current time: 5/4/24 5:09:40 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,387 MB. GUI used memory: 95 MB. Current time: 5/4/24 6:24:54 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,387 MB. GUI used memory: 97 MB. Current time: 5/4/24 10:07:19 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,387 MB. GUI used memory: 95 MB. Current time: 5/4/24 10:37:19 AM PDT

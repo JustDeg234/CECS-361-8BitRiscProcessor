@@ -26,8 +26,8 @@ module TOP(
     input [7:0] B,
     //input [4:0] op,
     input addition, subtraction, multiplication, previous, write_enable,
-    output [7:0] anode, [7:0] anode1,
-    output [7:0] cathode, [7:0] cathode1
+    output [7:0] anode, 
+    output [7:0] cathode
     //output reg switchDisplay
     //output reg [7:0] finalResult
     );

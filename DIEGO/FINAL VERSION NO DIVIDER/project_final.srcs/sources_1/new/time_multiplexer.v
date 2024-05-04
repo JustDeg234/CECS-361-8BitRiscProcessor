@@ -22,7 +22,7 @@
 
 module time_multiplexer(
     input clk, reset, switchInput,
-          // units, tens, hundreds, thousands  
+          // units, tens, hundreds, thousands...etc  
     input [3:0] in1, in2, in3, in4, in5, // 4-bit inputs w/ all possible scenarios for each 7-seg display (XXXX = 15, but we really only need to 9)
                                                           //       (anything less than 4-bits is too small, like XXX = 7)
     input [3:0] in1_A, in2_A, in3_A, in4_B, in5_B, in6_B,
@@ -59,7 +59,7 @@ module time_multiplexer(
     always @ (*) begin
     
         if(switchInput == 0) begin
-                case(curr_state[N-1:N-3]) // 2-bit value looking at the msb and one bit before the msb of curr_state
+                case(curr_state[N-1:N-3]) // 3-bit value looking at the msb and one bit before the msb of curr_state
                 (3'b000) : begin 
                               anode = 8'b1111_1110; // 000 001  010 011  100 101  110  111 
                               cathode = digit1; 
@@ -97,7 +97,7 @@ module time_multiplexer(
         else begin
         
         
-            case(curr_state[N-1:N-3]) // 2-bit value looking at the msb and one bit before the msb of curr_state
+            case(curr_state[N-1:N-3]) // 3-bit value looking at the msb and one bit before the msb of curr_state
                (3'b000) : begin 
                              anode = 8'b1111_1110; // 000 001  010 011  100 101  110  111 
                              cathode = digit1_A; 

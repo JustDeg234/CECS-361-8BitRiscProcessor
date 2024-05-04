@@ -44,23 +44,20 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/angry/Desktop/hmwk/year 3 semester 2/CECS 361/projects/project_final/project_final.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/angry/Desktop/hmwk/year 3 semester 2/CECS 361/projects/project_final/project_final.xpr} [current_project]
-  set_property ip_repo_paths {{c:/Users/angry/Desktop/hmwk/year 3 semester 2/CECS 361/projects/project_final/project_final.cache/ip}} [current_project]
-  set_property ip_output_repo {{c:/Users/angry/Desktop/hmwk/year 3 semester 2/CECS 361/projects/project_final/project_final.cache/ip}} [current_project]
-  add_files -quiet {{C:/Users/angry/Desktop/hmwk/year 3 semester 2/CECS 361/projects/project_final/project_final.runs/synth_1/TOP.dcp}}
-  read_xdc {{C:/Users/angry/Desktop/hmwk/year 3 semester 2/CECS 361/projects/project_final/NexysA7-100t.xdc}}
+  set_property webtalk.parent_dir {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.xpr} [current_project]
+  set_property ip_repo_paths {{c:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.cache/ip}} [current_project]
+  set_property ip_output_repo {{c:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.cache/ip}} [current_project]
+  add_files -quiet {{C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/synth_1/TOP.dcp}}
+  read_xdc {{C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/NexysA7-100t.xdc}}
   link_design -top TOP -part xc7a100tcsg324-1
   write_hwdef -file TOP.hwdef
   close_msg_db -file init_design.pb

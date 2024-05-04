@@ -69,7 +69,7 @@ always @(*) begin //always runs every clock cycle, always @(*) used only for com
         endcase
    
         
-end
+    end
 
 endmodule
 

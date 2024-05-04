@@ -46,13 +46,9 @@ module digit_Sep(
 
 // Declare variables for calculations
 reg [15:0] temp;
-//reg [15:0] decimal;
 
 reg [7:0] temp_A;
 reg [7:0] temp_B;
-//reg [7:0] A_dec;
-//reg [7:0] B_dec;
-
 
 // Separate the digits using procedural assignments
 always @*
@@ -60,7 +56,6 @@ always @*
     
         switchDisplay = switchInput;
     
-        //if (switchInput == 0) begin
             temp = input_data;
             digit_1 = temp % 10;
             temp = temp / 10;
@@ -72,8 +67,6 @@ always @*
             temp = temp / 10;
             digit_5 = temp % 10;
             
-        //end
-        //else begin
             // diagnose A's decimal form
             temp_A = A_channel;
             digit_1A = temp_A % 10;
@@ -89,7 +82,7 @@ always @*
             digit_2B = temp_B % 10;
             temp_B = temp_B / 10;
             digit_3B = temp_B % 10;        
-        //end
+     
     end
 
 endmodule

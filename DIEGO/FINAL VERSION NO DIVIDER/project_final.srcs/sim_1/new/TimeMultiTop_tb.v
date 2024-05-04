@@ -23,7 +23,6 @@
 module TimeMultiTop_tb; // simple testbench
 
     reg clk_tb, reset_tb;
-    //reg in1_tb = 0, in2_tb = 0, in3_tb = 0;
     reg [7:0] in1_tb = 0, in2_tb = 0, in3_tb = 0, in4_tb = 0;
     wire [3:0] anode_tb;
     wire [7:0] cathode_tb;
@@ -49,7 +48,6 @@ module TimeMultiTop_tb; // simple testbench
             in3_tb = 4;
             in4_tb = 8;
             
-            //repeat(20) @(negedge clk_tb); // wait for 20 falling edges before ending simulation
         end    
 
 endmodule
