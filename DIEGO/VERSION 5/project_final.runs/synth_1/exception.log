@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\angry\Desktop\hmwk\year 3 semester 2\CECS 361\projects\project_final\project_final.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied
