@@ -25,7 +25,7 @@ module TOP(
     input [7:0] A,
     input [7:0] B,
     //input [4:0] op,
-    input addition, subtraction, multiplication, previous, write_enable,
+    input addition, subtraction, multiplication, divide, previous, write_enable,
     output [7:0] anode, 
     output [7:0] cathode
     //output reg switchDisplay
@@ -65,7 +65,7 @@ module TOP(
     
     ALU alu(.A(A), .B(B), .alu_op(alu_op), .result(aluResult));
     //InstructionDecoder inst_dec(.op(op), .opcode(opcode));
-    InstructionDecoder inst_dec(.clk(clk), .add(addition), .sub(subtraction), .mult(multiplication), .prev(previous), .write_en(write_enable), .opcode(opcode));
+    InstructionDecoder inst_dec(.clk(clk), .add(addition), .sub(subtraction), .mult(multiplication), .div(divide), .prev(previous), .write_en(write_enable), .opcode(opcode));
     ControlUnit cu(.clk(clk), .opcode(opcode), .alu_op(alu_op), .read(read), .write(write), .switchInput(switchInput_s));
     Register register(.clk(clk), .read(read), .write(write), .result(aluResult), .readResult(readResult));
     digit_Sep digit_sep(.A_channel(A), .B_channel(B), .switchInput(switchInput_s), .input_data(readResult), .digit_1(in1), .digit_2(in2), .digit_3(in3), .digit_4(in4), .digit_5(in5), .digit_1A(in1_A), .digit_2A(in2_A), .digit_3A(in3_A), .digit_1B(in4_B), .digit_2B(in5_B), .digit_3B(in6_B));

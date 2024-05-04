@@ -28,8 +28,8 @@ module ALU(
     //input [1:0] alu_op, // 2 bit ALU operation control signal
     input [1:0] alu_op,
     //input alu_src
-    output reg [15:0] result,
-    output reg enableSDisplay
+    output reg [15:0] result
+    //output reg enableSDisplay
     );
     
     
@@ -37,7 +37,7 @@ module ALU(
     wire [7:0] subResult;
     //temp values
     wire [15:0] multResult;
-    wire [7:0] divResult = 8'b0000_0110;
+    wire [15:0] divResult = 8'b0000_0110;
    
     /*
     always @* begin
@@ -65,7 +65,7 @@ always @(*) begin //always runs every clock cycle, always @(*) used only for com
             2'b01: result = subResult; // Subtraction
             2'b10: result = multResult; // Array Multiplier Result
             2'b11: result = divResult; //Test
-            default: result = addResult; // Default is to show 
+            default: result = addResult; // Default is to show addition
         endcase
    
         
