@@ -20,18 +20,18 @@ set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project
 read_verilog -library xil_defaultlib {
   {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/HA.v}
   {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/FA.v}
-  {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/mux2to1.v}
   {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/block0.v}
+  {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/mux2to1.v}
   {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/divider_4bit.v}
-  {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/ArrMult_4bit.v}
-  {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/AddSub_8bit.v}
   {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/BCD_to7Seg.v}
-  {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ALU.v}
-  {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/Register.v}
+  {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/AddSub_8bit.v}
+  {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/ArrMult_4bit.v}
   {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/time_multiplexer.v}
+  {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/Register.v}
+  {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/InstructionDecoder.v}
   {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/digit_Sep.v}
   {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ControlUnit.v}
-  {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/InstructionDecoder.v}
+  {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ALU.v}
   {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/tempTOP.v}
 }
 foreach dcp [get_files -quiet -all *.dcp] {
