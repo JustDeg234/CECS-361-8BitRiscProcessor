@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Sat May 04 16:06:45 2024
+| Date             : Sun May 05 20:14:39 2024
 | Host             : LAPTOP-7NTTMRAQ running 64-bit major release  (build 9200)
 | Command          : report_power -file TOP_power_routed.rpt -pb TOP_power_summary_routed.pb -rpx TOP_power_routed.rpx
 | Design           : TOP
@@ -50,14 +50,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.004 |      490 |       --- |             --- |
-|   LUT as Logic |     0.004 |      318 |     63400 |            0.50 |
-|   Register     |    <0.001 |       67 |    126800 |            0.05 |
+| Slice Logic    |     0.004 |      493 |       --- |             --- |
+|   LUT as Logic |     0.004 |      304 |     63400 |            0.48 |
+|   F7/F8 Muxes  |    <0.001 |       12 |     63400 |            0.02 |
+|   Register     |    <0.001 |       68 |    126800 |            0.05 |
 |   CARRY4       |    <0.001 |        5 |     15850 |            0.03 |
-|   F7/F8 Muxes  |    <0.001 |        4 |     63400 |           <0.01 |
-|   Others       |     0.000 |       10 |       --- |             --- |
-| Signals        |     0.003 |      462 |       --- |             --- |
-| I/O            |     0.007 |       39 |       210 |           18.57 |
+|   Others       |     0.000 |       12 |       --- |             --- |
+| Signals        |     0.003 |      452 |       --- |             --- |
+| I/O            |     0.007 |       43 |       210 |           20.48 |
 | Static Power   |     0.104 |          |           |                 |
 | Total          |     0.119 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -139,10 +139,11 @@ Table of Contents
 | Name             | Power (W) |
 +------------------+-----------+
 | TOP              |     0.015 |
+|   alu            |    <0.001 |
 |   cu             |    <0.001 |
 |   inst_dec       |    <0.001 |
 |   inst_time_mux0 |     0.001 |
-|   register       |     0.006 |
+|   register       |     0.005 |
 +------------------+-----------+
 
 

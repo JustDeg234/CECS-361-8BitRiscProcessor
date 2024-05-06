@@ -1,0 +1,353 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat May 04 10:08:37 2024
+# Process ID: 42836
+# Current directory: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent39528 C:\Users\jonat\OneDrive\Desktop\CECS-361-8BitRiscProcessor\DIEGO\FINAL VERSION NO DIVIDER\project_final.xpr
+# Log file: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/vivado.log
+# Journal file: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER'
+INFO: [Project 1-313] Project file moved from 'C:/Users/angry/Desktop/hmwk/year 3 semester 2/CECS 361/projects/project_final' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 814.121 ; gain = 137.844
+update_compile_order -fileset sources_1
+reset_run impl_1 -noclean_dir 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Process appears to be on host 'LAPTOP-BQSABBDP' and cannot be killed from host 'LAPTOP-7NTTMRAQ'
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Sat May 04 10:11:49 2024] Launched synth_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/synth_1/runme.log
+[Sat May 04 10:11:49 2024] Launched impl_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A
+set_property PROGRAM.FILE {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+remove_files -fileset sim_1 {{C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.sim/ArrMult_4bit_tb.v}}
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:53 ; elapsed = 00:48:06 . Memory (MB): peak = 975.434 ; gain = 768.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/tempTOP.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'AddSub_8bit' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/AddSub_8bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/FA.v:23]
+INFO: [Synth 8-256] done synthesizing module 'FA' (1#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/FA.v:23]
+INFO: [Synth 8-256] done synthesizing module 'AddSub_8bit' (2#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/AddSub_8bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'ArrMult_8bit' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/ArrMult_4bit.v:22]
+INFO: [Synth 8-638] synthesizing module 'mux2to1' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/mux2to1.v:11]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1' (3#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/mux2to1.v:11]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/HA.v:11]
+INFO: [Synth 8-256] done synthesizing module 'HA' (4#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/HA.v:11]
+INFO: [Synth 8-256] done synthesizing module 'ArrMult_8bit' (5#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/ArrMult_4bit.v:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ALU.v:63]
+WARNING: [Synth 8-3848] Net enableSDisplay in module/entity ALU does not have driver. [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ALU.v:32]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (6#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-350] instance 'alu' of module 'ALU' requires 5 connections, but only 4 given [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/tempTOP.v:66]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecoder' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/InstructionDecoder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecoder' (7#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/InstructionDecoder.v:23]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (8#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register' (9#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-638] synthesizing module 'digit_Sep' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/digit_Sep.v:23]
+INFO: [Synth 8-256] done synthesizing module 'digit_Sep' (10#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/digit_Sep.v:23]
+WARNING: [Synth 8-350] instance 'digit_sep' of module 'digit_Sep' requires 16 connections, but only 15 given [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/tempTOP.v:71]
+INFO: [Synth 8-638] synthesizing module 'time_multiplexer' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/time_multiplexer.v:23]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'BCD_to7Seg' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/BCD_to7Seg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'BCD_to7Seg' (11#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/BCD_to7Seg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'time_multiplexer' (12#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/time_multiplexer.v:23]
+WARNING: [Synth 8-3848] Net anode1 in module/entity TOP does not have driver. [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/tempTOP.v:29]
+WARNING: [Synth 8-3848] Net cathode1 in module/entity TOP does not have driver. [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/tempTOP.v:30]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (13#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/tempTOP.v:23]
+WARNING: [Synth 8-3331] design ALU has unconnected port enableSDisplay
+WARNING: [Synth 8-3331] design TOP has unconnected port anode1[7]
+WARNING: [Synth 8-3331] design TOP has unconnected port anode1[6]
+WARNING: [Synth 8-3331] design TOP has unconnected port anode1[5]
+WARNING: [Synth 8-3331] design TOP has unconnected port anode1[4]
+WARNING: [Synth 8-3331] design TOP has unconnected port anode1[3]
+WARNING: [Synth 8-3331] design TOP has unconnected port anode1[2]
+WARNING: [Synth 8-3331] design TOP has unconnected port anode1[1]
+WARNING: [Synth 8-3331] design TOP has unconnected port anode1[0]
+WARNING: [Synth 8-3331] design TOP has unconnected port cathode1[7]
+WARNING: [Synth 8-3331] design TOP has unconnected port cathode1[6]
+WARNING: [Synth 8-3331] design TOP has unconnected port cathode1[5]
+WARNING: [Synth 8-3331] design TOP has unconnected port cathode1[4]
+WARNING: [Synth 8-3331] design TOP has unconnected port cathode1[3]
+WARNING: [Synth 8-3331] design TOP has unconnected port cathode1[2]
+WARNING: [Synth 8-3331] design TOP has unconnected port cathode1[1]
+WARNING: [Synth 8-3331] design TOP has unconnected port cathode1[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:53 ; elapsed = 00:48:07 . Memory (MB): peak = 1004.355 ; gain = 796.941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:53 ; elapsed = 00:48:07 . Memory (MB): peak = 1004.355 ; gain = 796.941
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/NexysA7-100t.xdc]
+Finished Parsing XDC File [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/NexysA7-100t.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:58 ; elapsed = 00:48:20 . Memory (MB): peak = 1332.617 ; gain = 1125.203
+31 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1332.617 ; gain = 382.082
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:03 ; elapsed = 00:49:05 . Memory (MB): peak = 1332.617 ; gain = 1125.203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/tempTOP.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'AddSub_8bit' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/AddSub_8bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/FA.v:23]
+INFO: [Synth 8-256] done synthesizing module 'FA' (1#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/FA.v:23]
+INFO: [Synth 8-256] done synthesizing module 'AddSub_8bit' (2#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/AddSub_8bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'ArrMult_8bit' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/ArrMult_4bit.v:22]
+INFO: [Synth 8-638] synthesizing module 'mux2to1' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/mux2to1.v:11]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1' (3#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/mux2to1.v:11]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/HA.v:11]
+INFO: [Synth 8-256] done synthesizing module 'HA' (4#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/HA.v:11]
+INFO: [Synth 8-256] done synthesizing module 'ArrMult_8bit' (5#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/ArrMult_4bit.v:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ALU.v:63]
+WARNING: [Synth 8-3848] Net enableSDisplay in module/entity ALU does not have driver. [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ALU.v:32]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (6#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-350] instance 'alu' of module 'ALU' requires 5 connections, but only 4 given [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/tempTOP.v:66]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecoder' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/InstructionDecoder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecoder' (7#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/InstructionDecoder.v:23]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (8#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register' (9#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-638] synthesizing module 'digit_Sep' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/digit_Sep.v:23]
+INFO: [Synth 8-256] done synthesizing module 'digit_Sep' (10#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/digit_Sep.v:23]
+WARNING: [Synth 8-350] instance 'digit_sep' of module 'digit_Sep' requires 16 connections, but only 15 given [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/tempTOP.v:71]
+INFO: [Synth 8-638] synthesizing module 'time_multiplexer' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/time_multiplexer.v:23]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'BCD_to7Seg' [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/BCD_to7Seg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'BCD_to7Seg' (11#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/BCD_to7Seg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'time_multiplexer' (12#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/time_multiplexer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (13#1) [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.srcs/sources_1/new/tempTOP.v:23]
+WARNING: [Synth 8-3331] design ALU has unconnected port enableSDisplay
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:04 ; elapsed = 00:49:06 . Memory (MB): peak = 1332.617 ; gain = 1125.203
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:04 ; elapsed = 00:49:06 . Memory (MB): peak = 1332.617 ; gain = 1125.203
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/NexysA7-100t.xdc]
+Finished Parsing XDC File [C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/NexysA7-100t.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1385.887 ; gain = 53.270
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Sat May 04 11:02:55 2024] Launched synth_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/synth_1/runme.log
+[Sat May 04 11:02:55 2024] Launched impl_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Sat May 04 15:48:16 2024] Launched synth_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/synth_1/runme.log
+[Sat May 04 15:48:16 2024] Launched impl_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Sat May 04 15:52:59 2024] Launched synth_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/synth_1/runme.log
+[Sat May 04 15:52:59 2024] Launched impl_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Sat May 04 15:55:27 2024] Launched synth_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/synth_1/runme.log
+[Sat May 04 15:55:27 2024] Launched impl_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Sat May 04 15:57:19 2024] Launched synth_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/synth_1/runme.log
+[Sat May 04 15:57:19 2024] Launched impl_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B0EEE0A
+set_property PROGRAM.FILE {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Sat May 04 16:02:45 2024] Launched synth_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/synth_1/runme.log
+[Sat May 04 16:02:45 2024] Launched impl_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Sat May 04 16:05:17 2024] Launched synth_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/synth_1/runme.log
+[Sat May 04 16:05:17 2024] Launched impl_1...
+Run output will be captured here: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].

@@ -20,8 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module InstructionDecoder( //basically a lot of muxes
-    //input [4:0] op,
+module InstructionDecoder( 
     
     input clk,
     input add,
@@ -33,8 +32,7 @@ module InstructionDecoder( //basically a lot of muxes
     
     output reg [2:0] opcode
     );
-    //reg div = 0;
-    //reg mult = 0;
+    
     
     //converts the multiple 1-bit signal input from the button presses to the corresponding operation code to be sent to ALU or Registers
     always @(posedge clk) begin
@@ -52,11 +50,9 @@ module InstructionDecoder( //basically a lot of muxes
             opcode = 3'b101;
         else // default to displaying user inputs
             opcode = 3'b110;
-            /*
-        else 
-            opcode = 3'b110;
-            */
+         
     end
+    
     /*always @(*) begin
     if (op == 5'b00010) //add, up btn
         opcode = 3'b000;

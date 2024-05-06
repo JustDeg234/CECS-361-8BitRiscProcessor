@@ -22,7 +22,6 @@
 
 module digit_Sep(
     input [7:0] A_channel, [7:0] B_channel, 
-    input switchInput,
     input [15:0] input_data,
     
     output reg [3:0] digit_1, 
@@ -38,9 +37,9 @@ module digit_Sep(
     output reg [3:0] digit_3B,
     
     output reg [3:0] digit_4, 
-    output reg [3:0] digit_5, 
+    output reg [3:0] digit_5
     
-    output reg switchDisplay
+    //output reg switchDisplay
     
 );
 
@@ -50,11 +49,11 @@ reg [15:0] temp;
 reg [7:0] temp_A;
 reg [7:0] temp_B;
 
+reg switchDisplay;
+
 // Separate the digits using procedural assignments
 always @*
     begin // diagnose the result's decimal form
-    
-        switchDisplay = switchInput;
     
             temp = input_data;
             digit_1 = temp % 10;
