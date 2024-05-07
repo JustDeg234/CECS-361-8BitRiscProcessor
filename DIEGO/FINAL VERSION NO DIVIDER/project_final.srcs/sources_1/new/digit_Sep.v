@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: CSULB
+// Engineer: Jonathan Lopez & Diego Davalos
 // 
 // Create Date: 04/30/2024 04:10:56 PM
 // Design Name: 

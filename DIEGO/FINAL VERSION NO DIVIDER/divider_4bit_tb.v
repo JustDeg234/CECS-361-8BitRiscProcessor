@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: CSULB
+// Engineer: Jonathan Lopez
 // 
 // Create Date: 05/05/2024 04:22:34 PM
 // Design Name: 
@@ -32,7 +32,7 @@ module divider_4bit_tb();
     integer i, j;
     integer success = 0, fail = 0;
     
-    divider_8bit uut(.A_input(a_tb), .B_input(b_tb), .quotient(quo_tb), .remainder(rem_tb));
+    divider_4bit uut(.A_input(a_tb), .B_input(b_tb), .quotient(quo_tb), .remainder(rem_tb));
     
     initial begin
         for(i=0; i < 16; i = i + 1) 

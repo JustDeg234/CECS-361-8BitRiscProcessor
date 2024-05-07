@@ -2,10 +2,10 @@
 # Webtalk v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Mon May 06 04:43:40 2024
-# Process ID: 25296
+# Start of session at: Tue May 07 02:52:35 2024
+# Process ID: 44336
 # Current directory: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.sim/sim_1/behav
-# Command line: wbtcv.exe -mode batch -source C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.sim/sim_1/behav/xsim.dir/ArrMult_8bit_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.sim/sim_1/behav/xsim.dir/topMod_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.sim/sim_1/behav/webtalk.log
 # Journal file: C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL VERSION NO DIVIDER/project_final.sim/sim_1/behav\webtalk.jou
 #-----------------------------------------------------------
@@ -14,4 +14,4 @@ invalid command name "%"
     while executing
 "% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
     (file "C:/Users/jonat/OneDrive/Desktop/CECS-361-8BitRiscProcessor/DIEGO/FINAL" line 1)
-INFO: [Common 17-206] Exiting Webtalk at Mon May 06 04:43:40 2024...
+INFO: [Common 17-206] Exiting Webtalk at Tue May 07 02:52:35 2024...
