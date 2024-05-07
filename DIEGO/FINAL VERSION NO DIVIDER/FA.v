@@ -28,16 +28,9 @@ module FA(
     output c_out
     );
 
-    //wire wire1, wire2, wire3;
-
     assign sum = a ^ b ^ c_in;
-    //xor (wire1, a, b);  wire1 = a ^ b;
-    //xor (sum, wire1, c_in); // sum = wire1 ^ c_in;
-
 
     assign c_out = (c_in * (a ^ b) + (a * b));
-    //and (wire2, a, b); // wire2 = a * b; 
-    //and (wire3, c_in, wire1); // wire3 = c_in * wire1; 
-    //or (c_out, wire3, wire2); // c_out = wire3 + wire2;
+    
 
 endmodule
