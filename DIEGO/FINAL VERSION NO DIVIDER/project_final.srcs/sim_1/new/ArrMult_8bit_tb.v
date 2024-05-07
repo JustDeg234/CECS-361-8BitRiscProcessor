@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: CSULB
+// Engineer: Jonathan Lopesz & Matthew Kim
 // 
 // Create Date: 05/03/2024 04:59:27 PM
 // Design Name: 

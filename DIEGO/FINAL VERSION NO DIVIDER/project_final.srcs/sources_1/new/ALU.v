@@ -70,7 +70,7 @@ always @(*) begin //always runs every clock cycle, always @(*) used only for com
                     divide_flag = 1;
                 end
             end
-            default: result = addResult; // Default is to show addition
+            default: result = 16'b0; // Default is to show 0
         endcase
    
         

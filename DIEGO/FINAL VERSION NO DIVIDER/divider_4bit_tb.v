@@ -30,9 +30,9 @@ module divider_4bit_tb();
     wire [3:0] rem_tb;
     
     integer i, j;
+    integer success = 0, fail = 0;
     
-    
-    divider_4bit uut(.A_input(a_tb), .B_input(b_tb), .quotient(quo_tb), .remainder(rem_tb));
+    divider_8bit uut(.A_input(a_tb), .B_input(b_tb), .quotient(quo_tb), .remainder(rem_tb));
     
     initial begin
         for(i=0; i < 16; i = i + 1) 
@@ -44,14 +44,16 @@ module divider_4bit_tb();
                 //#10;
                 quotient = (a_tb / b_tb);
                 remainder = (a_tb % b_tb);
-                #5;   
+                #3;   
                 if (quotient == quo_tb && remainder == rem_tb) 
                     begin
                     $display(a_tb," / ", b_tb, " passed. Since quotient = ",quotient," and quo_tb = ",quo_tb, ". Also remainder = ",remainder," and rem_tb =",rem_tb,);
+                    success = success + 1;
                     end 
                 else 
                     begin
                     $display(a_tb," / ", b_tb, " failed. Why: quotient = ",quotient," and quo_tb = ",quo_tb, ". Also remainder = ",remainder," and rem_tb =",rem_tb,);
+                    fail = fail + 1;
                     end 
                 end  
             end

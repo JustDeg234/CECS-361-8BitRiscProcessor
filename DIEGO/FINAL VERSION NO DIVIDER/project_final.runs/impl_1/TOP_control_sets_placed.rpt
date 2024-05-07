@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Mon May 06 05:33:02 2024
+| Date         : Mon May 06 20:19:24 2024
 | Host         : LAPTOP-7NTTMRAQ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
 | Design       : TOP
@@ -36,7 +36,7 @@ Table of Contents
 | No           | No                    | No                     |              36 |           11 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              32 |           11 |
+| Yes          | No                    | No                     |              32 |           12 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -45,14 +45,14 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------------------+----------------------------+------------------+------------------+----------------+
-|              Clock Signal              |        Enable Signal       | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------------------------------+----------------------------+------------------+------------------+----------------+
-|  cu/led_display[3]                     |                            |                  |                1 |              1 |
-|  inst_time_mux0/cathode_reg[6]_i_2_n_0 |                            |                  |                2 |              7 |
-|  clk_IBUF_BUFG                         | cu/E[0]                    |                  |                6 |             16 |
-|  clk_IBUF_BUFG                         | cu/readResult_reg[15]_0[0] |                  |                5 |             16 |
-|  clk_IBUF_BUFG                         |                            |                  |                8 |             28 |
-+----------------------------------------+----------------------------+------------------+------------------+----------------+
++----------------------------------------+--------------------------+------------------+------------------+----------------+
+|              Clock Signal              |       Enable Signal      | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------------------------------+--------------------------+------------------+------------------+----------------+
+|  cu/led_display[0]                     |                          |                  |                1 |              1 |
+|  inst_time_mux0/cathode_reg[6]_i_2_n_0 |                          |                  |                2 |              7 |
+|  clk_IBUF_BUFG                         | cu/E[0]                  |                  |                6 |             16 |
+|  clk_IBUF_BUFG                         | cu/readResult_reg[15][0] |                  |                6 |             16 |
+|  clk_IBUF_BUFG                         |                          |                  |                8 |             28 |
++----------------------------------------+--------------------------+------------------+------------------+----------------+
 
 
